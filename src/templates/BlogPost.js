@@ -15,11 +15,11 @@ const BlogPostTemplate = ({ data }) => (
     <p>
       Written by {data.wordpressPost.author.name} on {data.wordpressPost.date}
     </p>
-    <Img
+    {/* <Img
       sizes={data.wordpressPost.acf.feat_img.localFile.childImageSharp.sizes}
       alt={data.wordpressPost.title}
       style={{ maxHeight: 450 }}
-    />
+    /> */}
     <div
       style={{ marginTop: 20 }}
       dangerouslySetInnerHTML={{ __html: data.wordpressPost.content }}
@@ -38,17 +38,7 @@ export const query = graphql`
       author {
         name
       }
-      acf {
-        feat_img {
-          localFile {
-            childImageSharp {
-              sizes(maxWidth: 1200) {
-                ...GatsbyImageSharpSizes
-              }
-            }
-          }
-        }
-      }
+      
     }
   }
 `

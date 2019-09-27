@@ -9,12 +9,6 @@ const Header = () => (
         wordpressSiteMetadata {
           name
         }
-        wordpressWpApiMenusMenusItems(name: { eq: "Main Menu" }) {
-          items {
-            title
-            object_slug
-          }
-        }
       }
     `}
     render={data => (
@@ -45,22 +39,6 @@ const Header = () => (
               {data.wordpressSiteMetadata.name}
             </Link>
           </h1>
-          <ul style={{ listStyle: `none`, display: `flex`, margin: 0 }}>
-            {data.wordpressWpApiMenusMenusItems.items.map(item => (
-              <li key={item.object_slug} style={{ margin: `0 10px` }}>
-                <Link
-                  to={`/${item.object_slug}`}
-                  style={{
-                    color: `white`,
-                    textDecoration: `none`,
-                    fontFamily: `sans-serif`,
-                  }}
-                >
-                  {item.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
         </div>
       </header>
     )}

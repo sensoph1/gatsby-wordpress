@@ -58,3 +58,15 @@ export const query = graphql`
     }
   }
 `
+
+// acf {
+          //   feat_img {
+          //     localFile {
+          //       childImageSharp {
+          //         sizes(maxWidth: 600) {
+          //           ...GatsbyImageSharpSizes
+          //         }
+          //       }
+          //     }
+          //   }
+       // }
