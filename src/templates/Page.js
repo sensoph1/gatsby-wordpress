@@ -7,10 +7,10 @@ import SEO from "../components/seo"
 const PageTemplate = ({ data }) => (
   <Layout>
     <SEO
-      title={data.wordpressPage.title}
+      // title={data.wordpressPage.title}
       description={data.wordpressPage.excerpt}
     />
-    <h1>{data.wordpressPage.title}</h1>
+    {/* <h1>{data.wordpressPage.title}</h1> */}
     <div dangerouslySetInnerHTML={{ __html: data.wordpressPage.content }} />
   </Layout>
 )
