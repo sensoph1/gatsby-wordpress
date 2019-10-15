@@ -42,6 +42,7 @@ module.exports = {
     author: `jcp`,
     siteUrl:"http://76.217.63.23/wordpress",
 
+    
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
