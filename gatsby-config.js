@@ -37,12 +37,12 @@
 // gatsby-config.js
 module.exports = {
   siteMetadata: {
-    title: `jormpingcowpress`,
+    title: `wordpressgatsby`,
     description: `mooooooo`,
-    author: `jcp`,
-    siteUrl:"http://76.217.63.23/wordpress",
+    author: `jeremy`,
+    siteUrl:"http://76.217.63.23:80/wordpress",
 
-    
+
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -71,7 +71,7 @@ module.exports = {
       resolve: "gatsby-source-wordpress",
       options: {
         // I have created a dummy site for us to use with the plugins we discussed
-        baseUrl: "76.217.63.23/wordpress",
+        baseUrl: "http://76.217.63.23:80/wordpress",
         protocol: "http",
         hostingWPCOM: false,
         // We will be using some advanced custom fields
@@ -80,7 +80,7 @@ module.exports = {
         verboseOutput: false,
         perPage: 100,
         searchAndReplaceContentUrls: {
-          sourceUrl: "http://76.217.63.23/wordpress",
+          sourceUrl: "http://76.217.63.23:80/wordpress",
           replacementUrl: "https://localhost:8000",
         },
         // Set how many simultaneous requests are sent at once.
