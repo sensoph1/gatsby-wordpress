@@ -40,7 +40,7 @@ module.exports = {
     title: `wordpressgatsby`,
     description: `mooooooo`,
     author: `jeremy`,
-    siteUrl:"http://76.217.63.23:8090",
+    siteUrl:"https://jeremybarkley.000webhostapp.com/",
 
 
   },
@@ -71,7 +71,7 @@ module.exports = {
       resolve: "gatsby-source-wordpress",
       options: {
         // I have created a dummy site for us to use with the plugins we discussed
-        baseUrl: "http://76.217.63.23:8090/wordpress",
+        baseUrl: "https://jeremybarkley.000webhostapp.com/",
         protocol: "http",
         hostingWPCOM: false,
         // We will be using some advanced custom fields
@@ -80,7 +80,7 @@ module.exports = {
         verboseOutput: false,
         perPage: 100,
         searchAndReplaceContentUrls: {
-          sourceUrl: "http://76.217.63.23:8090/wordpress",
+          sourceUrl: "https://jeremybarkley.000webhostapp.com/",
           replacementUrl: "https://localhost:8000",
         },
         // Set how many simultaneous requests are sent at once.
